@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Birthday Cake</title>
+<style>
+body{background:#000;min-height:100vh;display:flex;flex-direction:column;align-items:center;justify-content:center;font-family:sans-serif}
+h1{color:#fff;margin-bottom:2rem}
+.card{background:#fff;padding:2rem 3rem;border-radius:10px;text-align:center}
+.msg{font-family:cursive;font-size:2rem;color:#444;margin-bottom:1rem}
+#cake{max-width:300px;margin:0 auto}
+#hearts{opacity:0;animation:fadeIn 1.5s ease-out forwards}
+@keyframes fadeIn{0%{opacity:0;transform:translateY(10px)}100%{opacity:1;transform:translateY(0)}}
+</style>
+</head>
+<body>
+<h1>Birthday Cake</h1>
+<div class="card">
+<p class="msg">Happy Birthday Shine!</p>
+<svg id="cake" viewBox="0 0 300 250">
+<g id="hearts">
+<path d="M100 60c-5-8-18-8-23 0c-5-8-18-8-23 0c-4 7 0 15 10 22l13 8 13-8c10-7 14-15 10-22z" fill="#ff99c8" opacity=".8"/>
+<path d="M200 50c-4-7-15-7-19 0c-4-7-15-7-19 0c-3 6 0 12 8 18l11 6 11-6c8-6 11-12 8-18z" fill="#ffb3c1" opacity=".9"/>
+<path d="M130 40c-3-5-11-5-14 0c-3-5-11-5-14 0c-2 4 0 9 6 13l8 5 8-5c6-4 8-9 6-13z" fill="#ffd6e0" opacity=".9"/>
+</g>
+<rect x="145" y="30" width="10" height="60" fill="#4dabf7" rx="2"/>
+<ellipse cx="150" cy="25" rx="6" ry="12" fill="#ffd43b"/>
+<ellipse cx="150" cy="25" rx="4" ry="9" fill="#ff922b"/>
+<ellipse cx="150" cy="22" rx="3" ry="6" fill="#fff3bf"/>
+<rect x="50" y="90" width="200" height="35" fill="#ffc6e4" rx="5"/>
+<path d="M50 90 L60 80 L80 90 L100 78 L120 90 L140 82 L160 90 L180 76 L200 90 L220 83 L240 90 L250 80 L250 90 Z" fill="#ff99d1"/>
+<rect x="40" y="125" width="220" height="35" fill="#ffd6e0" rx="5"/>
+<rect x="30" y="160" width="240" height="40" fill="#ffe8cc" rx="5"/>
+</svg>
+</div>
+</body>
+</html>
